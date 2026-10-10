@@ -10,11 +10,16 @@ When a patient chooses to connect their health system's patient portal (for exam
 2. The app reads that patient's own records through the health system's FHIR R4 patient API:
    - Patient (demographics needed to identify the record)
    - Observation: laboratory results and vital signs
-   - MedicationRequest
-   - Condition (problem list)
+   - MedicationRequest and Medication
+   - Condition (problem list, visit diagnoses and health concerns)
    - AllergyIntolerance
    - Immunization
-3. The records are shown to that patient on their own dashboard: lab results over time with reference ranges, vital signs trends, and lists of medications, conditions, allergies and immunizations.
+   - Encounter (visits)
+   - DiagnosticReport (test and imaging results)
+   - DocumentReference and Binary (clinical notes)
+   - Procedure
+   - The same record types from outside organizations that the health system has received ("Outside Record")
+3. The records are shown to that patient on their own dashboard: lab results over time with reference ranges and plain-language explanations, vital signs trends, visits with their reports and notes, and lists of medications, conditions, allergies and immunizations.
 
 The app only reads data. It never writes, changes or deletes anything in the health system.
 
