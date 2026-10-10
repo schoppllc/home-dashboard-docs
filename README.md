@@ -30,3 +30,7 @@ The app only reads data. It never writes, changes or deletes anything in the hea
 ## Contact
 
 Questions: open an issue in this repository.
+
+## Terms and conditions
+
+See [TERMS.md](TERMS.md).
